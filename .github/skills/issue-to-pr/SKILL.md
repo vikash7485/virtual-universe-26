@@ -26,8 +26,10 @@ same `gh` commands you ran by hand in Section 1.
 6. Show the changes and obtain approval before committing, pushing explicitly to
    the verified fork remote, and opening
    a draft pull request that closes the issue. Preserve any learner skill edits
-   and include them only with approval:
-   `gh pr create --draft --title "Fix #<n>: <issue title>" --body "Closes #<n>"`
+   and include them only with approval. Start the PR body with `Closes #<n>`,
+   then add a short summary and a `How to test` section with the exact commands
+   a reviewer can run:
+   `gh pr create --draft --title "Fix #<n>: <issue title>" --body "<body>"`
 7. Ask before commenting on the issue with what changed and how to test it.
    Report the exact issue, PR, and branch. Leave this PR branch checked out so
    the learner can review it in the same session; do not switch branches.
